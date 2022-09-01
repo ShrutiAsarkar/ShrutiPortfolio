@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Project{% endblock title %}
+{% block projectsactive %}active{% endblock projectsactive%}
+  {% load static %}
+
+  {% block body %}
+    <title>Projects</title>
+
+      <div class="container my-3">
+        <h2 class="text-center my-3 py-3"> About my projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/slider7.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Deep Learning Projet</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Click for Demo</a>
+            </div>
+          </div>
+          </div>
+        
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/slider8.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Machine Learning Project</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Click for Demo</a>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/slider9.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Python project</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Click for Demo</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+      {% endblock body %}
